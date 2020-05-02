@@ -17,7 +17,7 @@
     <!-- Title For Body -->
     <h1>NY Times Article Search</h1>
 
-    <!-- Search Form -->
+    <!-- Search Form -->g
     <form>
         <!-- Search Terms -->
         <label for="searchterm">Search term:</label>
@@ -30,6 +30,21 @@
         <!-- End Year (optional) -->
         <label for="endyear">End Year (Optional):</label>
         <input type="text" id="yearend" name="endyear"><br><br>
+
+        <!-- retrieve records -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            </div>
+            <select class="custom-select" id="retrieveRecords">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+        </div>
 
         <!-- Submit button -->
         <input type="submit" value="Submit">
