@@ -17,3 +17,15 @@ $("#submitBtn").on("click", function(e) {
         console.log(response);
     })
 })
+
+
+
+var results = response.docs
+// get results to display
+for (var i = 0; i < results.length; i++) {
+    // for each search, create a div in top Articles div
+    var topResultsDiv = $("<div>")
+    var p = $("<p>").text(results[i].abstract);
+    topResultsDiv.append(p);
+    $(".top-Articles").append(topResultsDiv)
+}
